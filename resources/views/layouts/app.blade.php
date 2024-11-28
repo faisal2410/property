@@ -47,7 +47,7 @@
       <div class="container">
         <div class="menu-bg-wrap">
           <div class="site-navigation">
-            <a href="index.html" class="logo m-0 float-start">Property</a>
+            <a href="{{ route('home') }}" class="logo m-0 float-start">Property</a>
 
             <ul
               class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
@@ -108,8 +108,8 @@
             <div class="widget">
               <h3>Sources</h3>
               <ul class="list-unstyled float-start links">
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="{{ route('about') }}">About us</a></li>
+                <li><a href="{{ route('services') }}">Services</a></li>
                 <li><a href="#">Vision</a></li>
                 <li><a href="#">Mission</a></li>
                 <li><a href="#">Terms</a></li>
@@ -132,8 +132,8 @@
               <h3>Links</h3>
               <ul class="list-unstyled links">
                 <li><a href="#">Our Vision</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="{{ route('about') }}">About us</a></li>
+                <li><a href="{{ route('contact') }}">Contact us</a></li>
               </ul>
 
               <ul class="list-unstyled social">

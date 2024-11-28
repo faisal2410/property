@@ -3,9 +3,9 @@
 @section('content')
     <div class="hero">
         <div class="hero-slide">
-            <div class="img overlay" style="background-image: url('images/hero_bg_3.jpg')"></div>
-            <div class="img overlay" style="background-image: url('images/hero_bg_2.jpg')"></div>
-            <div class="img overlay" style="background-image: url('images/hero_bg_1.jpg')"></div>
+            <div class="img overlay" style="background-image: url('{{ asset('images/hero_bg_3.jpg') }}')"></div>
+            <div class="img overlay" style="background-image: url('{{ asset('images/hero_bg_2.jpg') }}')"></div>
+            <div class="img overlay" style="background-image: url('{{ asset('images/hero_bg_1.jpg') }}')"></div>
         </div>
 
         <div class="container">
@@ -35,7 +35,7 @@
                 </div>
                 <div class="col-lg-6 text-lg-end">
                     <p>
-                        <a href="#" target="_blank" class="btn btn-primary text-white py-3 px-4">View all
+                        <a href="{{ route('properties') }}"  class="btn btn-primary text-white py-3 px-4">View all
                             properties</a>
                     </p>
                 </div>
@@ -49,7 +49,7 @@
 
                             @endforeach
 
-                          
+
                         </div>
 
                         <div id="property-nav" class="controls" tabindex="0" aria-label="Carousel Navigation">
